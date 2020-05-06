@@ -1,0 +1,16 @@
+/*
+ Theme Name:   saeon
+ Theme URI:    http://saeon.ac.za
+ Description:  SAEON Base Theme
+ Author:       SAEON
+ Author URI:   http://saeon.ac.za
+ Version:      1.0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         SAEON, Elementor
+ Text Domain:  saeon
+ */
+ body,html{
+    margin:0;
+    padding:0;
+ }
