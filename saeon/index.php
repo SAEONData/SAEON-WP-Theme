@@ -3,7 +3,7 @@
  * The main template file.
  */
 
- ?>
+get_header(); ?>
 
 
 		<main id="main" class="post-wrap" role="main">
@@ -28,3 +28,6 @@
 		<?php endif; ?>
 
 		</main>
+		
+
+<?php get_footer(); ?>

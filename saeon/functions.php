@@ -1,6 +1,18 @@
 <?php
+//add menu support
+add_theme_support( 'menus' );
 
-//add wp-login logo
+add_action( 'init', 'register_my_menus' );
+
+function register_my_menus() {
+	register_nav_menus(
+		array(
+			'primary-menu' => __( 'Primary Menu' ),
+			'secondary-menu' => __( 'Secondary Menu' )
+		)
+	);
+}
+//add wp-login branding
 
 function my_login_logo() { ?>
     <style type="text/css">
