@@ -1,7 +1,8 @@
 <?php
 /**
  * The main template file.
- */
+*/
+
 
 get_header(); ?>
 
@@ -29,5 +30,5 @@ get_header(); ?>
 
 		</main>
 		
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

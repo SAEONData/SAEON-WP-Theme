@@ -59,6 +59,6 @@ function loginpage_custom_link() {
 }
 add_filter('login_headerurl','loginpage_custom_link');
 function change_title_on_logo() {
-	return 'Code Fusion';
+	return 'SAEON';
 }
 add_filter('login_headertitle', 'change_title_on_logo');
