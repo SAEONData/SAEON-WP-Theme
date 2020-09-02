@@ -13,16 +13,22 @@
             <?php endif;?>
         </div>
         <div class="sn-col-4">
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer 1") ) : ?>
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer 2") ) : ?>
             <?php endif;?>
         </div>
         <div class="sn-col-4">
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer 1") ) : ?>
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer 3") ) : ?>
             <?php endif;?>
         </div>
     </div>
-    <p>Copyright <?php echo date("Y"); ?> <?php bloginfo( 'title' ); ?> | Powered by <a href="http://www.saeon.ac.za/" target="_blank">SAEON</a></p>
 </div>
+
+<div class="sn-footer-copy">
+<div class="sn-container">
+    Copyright <?php echo date("Y"); ?> <?php bloginfo( 'title' ); ?> | Powered by <a href="http://www.saeon.ac.za/" target="_blank">SAEON</a>
+</div>
+</div>
+
 </footer>
 
 <?php wp_footer(); ?>

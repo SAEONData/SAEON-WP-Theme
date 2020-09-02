@@ -6,11 +6,15 @@
  Requires at least:   4.7
  Tested up to: 4.7
  Requires PHP: 5.2.4
- Version:      1.0.1
+ Version:      1.0.2
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         blog,custom-menu,featured-images
  Text Domain:  saeon
+ */
+ /* Colors
+ Blue: #5987c6
+ Grey: #7a7a7a
  */
  body,html{
     margin:0;
@@ -97,7 +101,7 @@ div.aligncenter {
 
  /* Header */
  body{
-   padding-top: 128px;
+   padding-top: 172px;
  }
  @media only screen and (max-width: 768px) {
    body{
@@ -654,4 +658,15 @@ div.aligncenter {
     max-width: 1140px;
   }
 }
-
+/* Footer */
+#sn-footer{
+  background:#5987c6;
+  color:#fff;
+}
+#sn-footer h4{
+  color:#fff;
+}
+.sn-footer-copy{
+  background: #4573b2;
+  padding: 15px 0;
+}

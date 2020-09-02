@@ -17,6 +17,9 @@ Yes, child themes are supported, this is a base theme
 
 == Changelog ==
 
+= 1.0.2 =
+* Footer Widgets added
+
 = 1.0.1 =
 * Initial release
 
