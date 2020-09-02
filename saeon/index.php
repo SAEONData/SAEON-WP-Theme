@@ -21,6 +21,7 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
+			<?php wp_link_pages( $args ); ?>
 
 		<?php else : ?>
 
