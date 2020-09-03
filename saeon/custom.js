@@ -3,10 +3,12 @@ jQuery(document).ready(function($) {
     /* Scroll */
     $(window).scroll(function(){
         if($(this).scrollTop() > 150) {
+            $('.saeon-header').removeClass('sn-noscroll');
             $('.saeon-header').addClass('scrollnav');
             $('#more-scroll').fadeOut(300);
         }
         else{
+            $('.saeon-header').addClass('sn-noscroll');
             $('.saeon-header').removeClass('scrollnav');
             $('#more-scroll').fadeIn(300); 
         }

@@ -23,7 +23,7 @@
 <?php wp_body_open(); ?>
 
 <body <?php body_class(); post_class();?> id="post-<?php the_ID(); ?>" >
-    <header class="saeon-header" role="banner">
+    <header class="saeon-header sn-noscroll" role="banner">
 		<div class="logo"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_home_url() ?>/wp-content/themes/saeon/img/logo.png " /></a></div>
 		<a href="<?php echo get_home_url(); ?>" id="saeon-title"><strong><span class="display-desktop">SAEON </span><?php bloginfo( 'title' ); ?></strong>
 		<?php bloginfo( 'description' ); ?></a>

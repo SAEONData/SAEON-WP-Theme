@@ -101,7 +101,7 @@ div.aligncenter {
 
  /* Header */
  body{
-   padding-top: 172px;
+   padding-top: 128px;
  }
  @media only screen and (max-width: 768px) {
    body{
@@ -663,10 +663,20 @@ div.aligncenter {
   background:#5987c6;
   color:#fff;
 }
-#sn-footer h4{
+#sn-footer h4,#sn-footer a{
   color:#fff;
 }
 .sn-footer-copy{
   background: #4573b2;
   padding: 15px 0;
+  font-size: 14px;
+}
+#sn-footer ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 10px 15px 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
 }
