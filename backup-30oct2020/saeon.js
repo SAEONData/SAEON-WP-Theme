@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
         }
     });
 
-
+console.log('loaded')
 
 
     $.fn.menumaker = function(options) {

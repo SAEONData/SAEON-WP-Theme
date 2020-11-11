@@ -1,6 +1,6 @@
 <?php
 /**
- * The Header template for saeon theme
+ * The Header template for our theme
  */
 ?><!DOCTYPE html>
 <!--[if IE 7]>
@@ -22,30 +22,15 @@
 
 <?php wp_body_open(); ?>
 
-<body <?php body_class(); post_class();?> id="post-<?php the_ID(); ?>" saeon-header="<?php echo esc_attr($title_color); ?> test">
+<body <?php body_class(); post_class();?> id="post-<?php the_ID(); ?>" >
     <header class="saeon-header sn-noscroll" role="banner">
-
-		<div class="sn-logo">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-		<?php
-		$custom_logo_id = get_theme_mod( 'custom_logo' );
-		$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-		
-		if ( has_custom_logo() ) {
-			echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="' . get_bloginfo( 'name' ) . '">';
-		} else {
-				echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
-		}
-			?>
-		</a>
-		</div>
-
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="saeon-title"><strong><?php echo esc_html( get_bloginfo( 'title' ) ); ?></strong>
+		<div class="logo"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_home_url() ?>/wp-content/themes/saeon/img/logo.png " /></a></div>
+		<a href="<?php echo get_home_url(); ?>" id="saeon-title"><strong><span class="display-desktop">SAEON </span><?php bloginfo( 'title' ); ?></strong>
 		<?php bloginfo( 'description' ); ?></a>
 
-		<nav id="sn-cssmenu" role="navigation">
-		<div id="sn-head-mobile"></div>
-		<div class="sn-button"></div>
+		<nav id="cssmenu" role="navigation">
+		<div id="head-mobile"></div>
+		<div class="button"></div>
 			<?php
 			wp_nav_menu(
 				array(

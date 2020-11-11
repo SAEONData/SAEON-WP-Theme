@@ -2,7 +2,7 @@
  Theme Name:   saeon
  Description:  SAEON Base Theme. Basic Up to Date Theme for supporting child styles
  Author:       SAEON
- Author URI:   http://ulwazi.saeon.ac.za
+ Author URI:   http://saeon.ac.za
  Requires at least:   4.7
  Tested up to: 4.7
  Requires PHP: 5.2.4
@@ -98,45 +98,26 @@ div.aligncenter {
   float: left;
   margin: 5px 20px 20px 0;
 }
-/* Header colors */
-.transparent.sn-noscroll .elementor-location-header header{
-  background-color: transparent!important;
-  border-color: transparent!important;
-  -webkit-box-shadow:none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.transparent.sn-noscroll .elementor-location-header .elementor-heading-title,
-.transparent.sn-noscroll .elementor-location-header .elementor-nav-menu--main .elementor-item,
-.transparent.sn-noscroll .elementor-location-header .fa-search
-{
-  color: #fff!important;
-}
-@media only screen and (min-width: 768px) {
-  .transparent.sn-noscroll .elementor-location-header header{
-    position:fixed;
-  }
-  
-}
+
  /* Header */
- .saeon-header + main{
+ body{
    padding-top: 128px;
  }
  @media only screen and (max-width: 768px) {
-  .saeon-header + main{
+   body{
      padding-top: 64px;
    }
-   .sn-display-desktop {
+   .display-desktop {
       display: none;
   }
  }
- #saeon-title,.saeon-header,.sn-logo img,
- #sn-cssmenu,#sn-cssmenu a{
+ #saeon-title,.seaon-header,.logo img,
+ #cssmenu,#cssmenu a{
    -webkit-transition: all 0.3s ease-in;
    -o-transition: all 0.3s ease-in;
    transition: all 0.3s ease-in;
  }
- #sn-cssmenu{
+ #cssmenu{
    position: fixed;
    z-index: 99;
    right: 30px;
@@ -145,7 +126,7 @@ div.aligncenter {
    padding: 0;
    margin: 0;
  }
- #sn-cssmenu ul{
+ #cssmenu ul{
    margin: 0;
  }
  #saeon-title{
@@ -163,29 +144,14 @@ div.aligncenter {
    height: 23px;
    margin-bottom: 4px;
  }
- .sn-logo a{
-  text-decoration: none;
-}
-.sn-logo h1{
-  font-size: 22px;
-    margin: 0;
-    line-height: 33px;
-    color: #5987c6;
-}
  @media only screen and (min-width: 769px) {
-   .sn-scrollnav #saeon-title {
+   .scrollnav #saeon-title {
      margin-top: -60px;
    }
-   .sn-scrollnav .sn-logo img{
+   .scrollnav .logo img{
      height: 33px;
    }
-   .sn-logo h1{
-      line-height: 93px;
-  }
-   .sn-scrollnav .sn-logo h1{
-      line-height: 33px;
-  }
-   .sn-scrollnav #sn-cssmenu {
+   .scrollnav #cssmenu {
      top: 7px;
      border-top: 1px solid #fff;
    }
@@ -203,22 +169,22 @@ div.aligncenter {
    -moz-box-shadow: 0px 3px 5px -4px rgba(0,0,0,0.75);
    box-shadow: 0px 3px 5px -4px rgba(0,0,0,0.75);
  }
- .sn-logo {
+ .logo {
    position: relative;
    float: left;
    padding-left: 30px;
  }
- .sn-logo img{
+ .logo img{
    height: 93px;
  }
  nav {
    position: relative;
  }
  
- #sn-cssmenu ul,
- #sn-cssmenu ul li,
- #sn-cssmenu ul li a,
- #sn-cssmenu #sn-head-mobile {
+ #cssmenu ul,
+ #cssmenu ul li,
+ #cssmenu ul li a,
+ #cssmenu #head-mobile {
    border: 0;
    list-style: none;
    line-height: 1;
@@ -229,8 +195,8 @@ div.aligncenter {
    box-sizing: border-box
  }
  
- #sn-cssmenu:after,
- #sn-cssmenu > ul:after {
+ #cssmenu:after,
+ #cssmenu > ul:after {
    content: ".";
    display: block;
    clear: both;
@@ -238,21 +204,21 @@ div.aligncenter {
    line-height: 0;
    height: 0
  }
- #sn-cssmenu .sub-menu{
+ #cssmenu .sub-menu{
    background: #fff;
    -webkit-box-shadow: 0px 3px 5px -4px rgba(0,0,0,0.75);
    -moz-box-shadow: 0px 3px 5px -4px rgba(0,0,0,0.75);
    box-shadow: 0px 3px 5px -4px rgba(0,0,0,0.75);
    padding: 0;
  }
- #sn-cssmenu #sn-head-mobile {
+ #cssmenu #head-mobile {
    display: none
  }
- #sn-cssmenu > ul > li {
+ #cssmenu > ul > li {
    float: left
  }
  
- #sn-cssmenu > ul > li > a {
+ #cssmenu > ul > li > a {
    text-decoration: none;
    font-size: 13px;
    padding: 18px 15px;
@@ -263,8 +229,8 @@ div.aligncenter {
    color: #7a7a7a;
  }
  
- #sn-cssmenu > ul > li:hover > a,
- #sn-cssmenu ul li.active a {
+ #cssmenu > ul > li:hover > a,
+ #cssmenu ul li.active a {
    color: #8a8a8e;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
@@ -273,10 +239,10 @@ div.aligncenter {
    transition: all 0.3s ease-in-out;
  }
  
- #sn-cssmenu > ul > li:hover,
- #sn-cssmenu ul li.active:hover,
- #sn-cssmenu ul li.active,
- #sn-cssmenu ul li.sn-has-sub.active:hover {
+ #cssmenu > ul > li:hover,
+ #cssmenu ul li.active:hover,
+ #cssmenu ul li.active,
+ #cssmenu ul li.has-sub.active:hover {
    color: #8a8a8e;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
@@ -285,11 +251,11 @@ div.aligncenter {
    transition: all 0.3s ease-in-out;
  }
  
- #sn-cssmenu > ul > li.sn-has-sub > a {
+ #cssmenu > ul > li.has-sub > a {
    padding-right: 30px
  }
  
- #sn-cssmenu > ul > li.sn-has-sub > a:after {
+ #cssmenu > ul > li.has-sub > a:after {
    position: absolute;
    top: 27px;
    right: 11px;
@@ -300,7 +266,7 @@ div.aligncenter {
    content: ''
  }
  
- #sn-cssmenu > ul > li.sn-has-sub > a:before {
+ #cssmenu > ul > li.has-sub > a:before {
    position: absolute;
    top: 24px;
    right: 14px;
@@ -314,36 +280,36 @@ div.aligncenter {
    transition: all .25s ease
  }
  
- #sn-cssmenu > ul > li.sn-has-sub:hover > a:before {
+ #cssmenu > ul > li.has-sub:hover > a:before {
    top: 28px;
    height: 0
  }
  
- #sn-cssmenu ul ul {
+ #cssmenu ul ul {
    position: absolute;
    left: -9999px
  }
  
- #sn-cssmenu ul ul li {
+ #cssmenu ul ul li {
    height: 0;
    -webkit-transition: all .25s ease;
    -ms-transition: all .25s ease;
    transition: all .25s ease
  }
- #sn-cssmenu li:hover > ul {
+ #cssmenu li:hover > ul {
    left: auto
  }
  
- #sn-cssmenu li:hover > ul > li {
+ #cssmenu li:hover > ul > li {
    height: 42px
  }
  
- #sn-cssmenu ul ul ul {
+ #cssmenu ul ul ul {
    margin-left: 100%;
    top: 0
  }
  
- #sn-cssmenu ul ul li a {
+ #cssmenu ul ul li a {
    border-bottom: 1px solid rgba(150, 150, 150, 0.15);
    padding: 14px 15px;
    width: 220px;
@@ -352,18 +318,18 @@ div.aligncenter {
    color: #7a7a7a;
  }
  
- #sn-cssmenu ul ul li:last-child > a,
- #sn-cssmenu ul ul li.last-item > a {
+ #cssmenu ul ul li:last-child > a,
+ #cssmenu ul ul li.last-item > a {
    border-bottom: 0
  }
  
- #sn-cssmenu ul ul li:hover > a,
- #sn-cssmenu ul ul li a:hover {
+ #cssmenu ul ul li:hover > a,
+ #cssmenu ul ul li a:hover {
    color: #fff;
    background: #5987c6;
  }
  
- #sn-cssmenu ul ul li.sn-has-sub > a:after {
+ #cssmenu ul ul li.has-sub > a:after {
    position: absolute;
    top: 16px;
    right: 11px;
@@ -374,7 +340,7 @@ div.aligncenter {
    content: ''
  }
  
- #sn-cssmenu ul ul li.sn-has-sub > a:before {
+ #cssmenu ul ul li.has-sub > a:before {
    position: absolute;
    top: 13px;
    right: 14px;
@@ -388,27 +354,27 @@ div.aligncenter {
    transition: all .25s ease
  }
  
- #sn-cssmenu ul ul > li.sn-has-sub:hover > a:before {
+ #cssmenu ul ul > li.has-sub:hover > a:before {
    top: 17px;
    height: 0
  }
  
- #sn-cssmenu ul ul li.sn-has-sub:hover,
- #sn-cssmenu ul li.sn-has-sub ul li.sn-has-sub ul li:hover {
+ #cssmenu ul ul li.has-sub:hover,
+ #cssmenu ul li.has-sub ul li.has-sub ul li:hover {
    background: #363636;
  }
  
- #sn-cssmenu ul ul ul li.active a {
+ #cssmenu ul ul ul li.active a {
    border-left: 1px solid #333
  }
  
- #sn-cssmenu > ul > li.sn-has-sub > ul > li.active > a,
- #sn-cssmenu > ul ul > li.sn-has-sub > ul > li.active> a {
+ #cssmenu > ul > li.has-sub > ul > li.active > a,
+ #cssmenu > ul ul > li.has-sub > ul > li.active> a {
    border-top: 1px solid #333
  }
  
  @media screen and (max-width:786px) {
-   .sn-display-desktop{
+   .display-desktop{
      display:none;
    }
    .logo {
@@ -419,96 +385,90 @@ div.aligncenter {
      height: 46px;
      padding: 10px 0 0 6px;
    }
-   .sn-logo {
-      padding-left: 15px;
-  }
-   .sn-logo img {
+   .logo img {
      height: 42px;
    }
    #saeon-title {
-     padding: 5px 70px 0 0;
+     padding: 0 70px 0 0;
      font-size: 13px;
    }
    #saeon-title strong {
      font-size: 14px;
-      height: 12px;
+       height: 12px;
    }
-   header {
-    padding: 8px 0;
-  }
-   .sn-logo2 {
+   .logo2 {
      display: none;
    }
    nav {
      width: 100%;
    }
-   #sn-cssmenu {
+   #cssmenu {
      width: 100%;
      right: 0;
      top: 0;
      border: none;
    }
-   #sn-cssmenu ul {
+   #cssmenu ul {
      width: 100%;
      display: none;
    }
-   #sn-cssmenu ul li {
+   #cssmenu ul li {
      width: 100%;
      border-top: 1px solid #444;
    }
-   #sn-cssmenu ul li:hover {
+   #cssmenu ul li:hover {
      background: #5987C6;
    }
-   #sn-cssmenu > ul > li:hover > a, #sn-cssmenu ul li.active a {
+   #cssmenu > ul > li:hover > a, #cssmenu ul li.active a {
      color: #fff;
  }
-   #sn-cssmenu ul ul li,
-   #sn-cssmenu li:hover > ul > li {
+   #cssmenu ul ul li,
+   #cssmenu li:hover > ul > li {
      height: auto;
    }
-   #sn-cssmenu ul li a,
-   #sn-cssmenu ul ul li a {
+   #cssmenu ul li a,
+   #cssmenu ul ul li a {
      width: 100%;
      border-bottom: 0;
    }
-   #sn-cssmenu > ul > li {
+   #cssmenu > ul > li {
      float: none;
    }
-   #sn-cssmenu ul ul li a {
+   #cssmenu ul ul li a {
      padding-left: 25px;
    }
-   #sn-cssmenu ul ul li {
+   #cssmenu ul ul li {
      background: #4573b2!important;
    }
-   #sn-cssmenu ul ul li:hover {
+   #cssmenu ul ul li:hover {
      background: #4573b2!important
    }
-   #sn-cssmenu ul ul ul li a {
+   #cssmenu ul ul ul li a {
      padding-left: 35px;
    }
-   #sn-cssmenu ul ul li a {
+   #cssmenu ul ul li a {
      color: #fff;
      background: none;
    }
-   #sn-cssmenu ul ul li:hover > a,
-   #sn-cssmenu ul ul li.active > a {
+   #cssmenu ul ul li:hover > a,
+   #cssmenu ul ul li.active > a {
      color: #ccc;
    }
-   #sn-cssmenu ul ul,
-   #sn-cssmenu ul ul ul {
+   #cssmenu ul ul,
+   #cssmenu ul ul ul {
      position: relative;
      left: 0;
      width: 100%;
      margin: 0;
      text-align: left;
    }
-   #sn-cssmenu > ul > li.sn-has-sub > a:after,
-   #sn-cssmenu > ul > li.sn-has-sub > a:before,
-   #sn-cssmenu ul ul > li.sn-has-sub > a:after,
-   #sn-cssmenu ul ul > li.sn-has-sub > a:before {
+   #cssmenu > ul > li.has-sub > a:after,
+   #cssmenu > ul > li.has-sub > a:before,
+   #cssmenu ul ul > li.has-sub > a:after,
+   #cssmenu ul ul > li.has-sub > a:before {
      display: none;
    }
-   #sn-cssmenu #sn-head-mobile {
+   #cssmenu #head-mobile {
      display: block;
      padding: 32px 23px;
      color: #ddd;
@@ -519,7 +479,7 @@ div.aligncenter {
      padding: 0;
      background: #fff;
    }
-   .sn-button {
+   .button {
      width: 55px;
      height: 46px;
      position: absolute;
@@ -528,7 +488,7 @@ div.aligncenter {
      cursor: pointer;
      z-index: 12399994;
    }
-   .sn-button:after {
+   .button:after {
      position: absolute;
      top: 22px;
      right: 20px;
@@ -539,7 +499,7 @@ div.aligncenter {
      border-bottom: 2px solid #dddddd;
      content: '';
    }
-   .sn-button:before {
+   .button:before {
      -webkit-transition: all .3s ease;
      -ms-transition: all .3s ease;
      transition: all .3s ease;
@@ -552,7 +512,7 @@ div.aligncenter {
      background: #ddd;
      content: '';
    }
-   .sn-button.sn-menu-opened:after {
+   .button.menu-opened:after {
      -webkit-transition: all .3s ease;
      -ms-transition: all .3s ease;
      transition: all .3s ease;
@@ -567,7 +527,7 @@ div.aligncenter {
      -o-transform: rotate(45deg);
      transform: rotate(45deg);
    }
-   .sn-button.sn-menu-opened:before {
+   .button.menu-opened:before {
      top: 23px;
      background: #ccc;
      width: 19px;
@@ -577,7 +537,7 @@ div.aligncenter {
      -o-transform: rotate(-45deg);
      transform: rotate(-45deg);
    }
-   #sn-cssmenu .sn-submenu-button {
+   #cssmenu .submenu-button {
      position: absolute;
      z-index: 99;
      right: 0;
@@ -588,14 +548,14 @@ div.aligncenter {
      width: 46px;
      cursor: pointer;
    }
-   #sn-cssmenu .sn-submenu-button.sn-submenu-opened {
+   #cssmenu .submenu-button.submenu-opened {
      background: #4573b2;
    }
-   #sn-cssmenu ul ul .sn-submenu-button {
+   #cssmenu ul ul .submenu-button {
      height: 34px;
      width: 34px;
    }
-   #sn-cssmenu .sn-submenu-button:after {
+   #cssmenu .submenu-button:after {
      position: absolute;
      top: 26px;
      right: 19px;
@@ -605,14 +565,14 @@ div.aligncenter {
      background: #ddd;
      content: '';
    }
-   #sn-cssmenu ul ul .sn-submenu-button:after {
+   #cssmenu ul ul .submenu-button:after {
      top: 15px;
      right: 13px;
    }
-   #sn-cssmenu .sn-submenu-button.sn-submenu-opened:after {
+   #cssmenu .submenu-button.submenu-opened:after {
      background: #ccc;
    }
-   #sn-cssmenu .sn-submenu-button:before {
+   #cssmenu .submenu-button:before {
      position: absolute;
      top: 23px;
      right: 22px;
@@ -622,18 +582,18 @@ div.aligncenter {
      background: #ddd;
      content: '';
    }
-   #sn-cssmenu ul ul .sn-submenu-button:before {
+   #cssmenu ul ul .submenu-button:before {
      top: 12px;
      right: 16px;
    }
-   #sn-cssmenu .sn-submenu-button.sn-submenu-opened:before {
+   #cssmenu .submenu-button.submenu-opened:before {
      display: none;
    }
-   #sn-cssmenu ul ul ul li.active a {
+   #cssmenu ul ul ul li.active a {
      border-left: none;
    }
-   #sn-cssmenu > ul > li.sn-has-sub > ul > li.active > a,
-   #sn-cssmenu > ul ul > li.sn-has-sub > ul > li.active > a {
+   #cssmenu > ul > li.has-sub > ul > li.active > a,
+   #cssmenu > ul ul > li.has-sub > ul > li.active > a {
      border-top: none;
    }
  }

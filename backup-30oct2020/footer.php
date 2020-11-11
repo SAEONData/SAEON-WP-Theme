@@ -25,7 +25,7 @@
 
 <div class="sn-footer-copy">
 <div class="sn-container">
-<?php echo esc_html__( 'Copyright', 'saeon' ); ?> <?php echo date("Y"); ?> <?php bloginfo( 'title' ); ?> | <?php echo esc_html__( 'Powered by', 'saeon' ); ?> <a href="http://www.saeon.ac.za/" target="_blank">SAEON</a>
+    Copyright <?php echo date("Y"); ?> <?php bloginfo( 'title' ); ?> | Powered by <a href="http://www.saeon.ac.za/" target="_blank">SAEON</a>
 </div>
 </div>
 

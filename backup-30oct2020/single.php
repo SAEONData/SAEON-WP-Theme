@@ -6,10 +6,10 @@
   
  get_header();  ?>
 
-<section class="edu-post-header">
-    <div class="elementor-widget-heading">
+<section class="sn-post-header">
+    <div class="news-widget-heading">
     <!-- Image START  -->
-    <div  href="<?php the_permalink(); ?>" class="edu-post-image" 
+    <div  href="<?php the_permalink(); ?>" class="sn-post-image" 
 			<?php if (has_post_thumbnail()) { ?>
 				style="background-image:url(<?php the_post_thumbnail_url(); ?>)"
            <?php } else { ?>
@@ -20,7 +20,7 @@
 
 		   </div>
     <!-- Image START  -->   
-        <h1 class="elementor-heading-title"><?php the_title(); ?></h1>
+        <h1 class="news-heading-title"><?php the_title(); ?></h1>
     </div>
     <small class="post-meta">
         <span class="post-date"><?php echo get_the_date(); ?></span> | 
