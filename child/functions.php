@@ -1,20 +1,13 @@
 <?php
 
-function my_theme_enqueue_styles() {
+/* enqueue script for parent theme stylesheeet */        
+function childtheme_parent_styles() {
  
-    $parent_style = 'parent-style'; 
- 
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array( $parent_style ),
-        wp_get_theme()->get('Version')
-    );
-    wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/custom.js', array( 'jquery' ),'',true );
+ // enqueue style
+ wp_enqueue_style( 'parent', get_template_directory_uri().'/style.css' );     
+ wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/custom.js', array( 'jquery' ),'',true );                  
 }
-
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
-
+add_action( 'wp_enqueue_scripts', 'childtheme_parent_styles');
 
 //add wp-login branding
 function my_login_logo() { ?>
@@ -52,7 +45,7 @@ function my_login_logo() { ?>
 				border-radius: 0;
 			}
 			body.login .message {
-			border-left: 4px solid #231f20;
+			    border-left: 4px solid #231f20;
 			}
     </style>
 <?php }
@@ -65,4 +58,5 @@ function change_title_on_logo() {
 	return 'SAEON';
 }
 add_filter('login_headertext', 'change_title_on_logo');
+
 
