@@ -6,7 +6,12 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
   */
 jQuery(document).ready(function($) {
-    /* Scroll */
+
+  /* home page header */
+  $("#home-meu").click(function(){
+    $(".saeon-header").removeClass("sn-noscroll");
+ });
+  /* Scroll */
     $(window).scroll(function(){
         if($(this).scrollTop() > 150) {
             $('*[class*="saeon-header"]').removeClass('sn-noscroll');

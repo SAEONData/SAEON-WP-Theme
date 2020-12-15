@@ -22,7 +22,7 @@
 
 <?php wp_body_open(); ?>
 
-<body <?php body_class(); post_class();?> id="post-<?php the_ID(); ?>" saeon-header="<?php echo esc_attr($title_color); ?> test">
+<body <?php body_class(); post_class();?> id="post-<?php the_ID(); ?>" saeon-header="<?php echo esc_attr($title_color); ?> ">
     <header class="saeon-header sn-noscroll" role="banner">
 
 		<div class="sn-logo">

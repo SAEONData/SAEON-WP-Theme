@@ -22,7 +22,7 @@ Blue: #5987c6
 Shadow:
 0px 4px 22px rgba(0,0,0,0.5)
 */
-body.home {
+body.saeonhome {
     padding-top: 0;
     color:#222222;
 }
@@ -41,7 +41,7 @@ a{
     box-shadow:         0px 4px 22px rgba(0,0,0,0.5);
 }
 #home-meu,#home-meu *,
-.home .sn-noscroll,.home .sn-noscroll #cssmenu,
+.saeonhome .sn-noscroll,.saeonhome .sn-noscroll #cssmenu,
 .saeon-header,input[type="submit"]{
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
@@ -53,10 +53,10 @@ a{
 }
 
 /* Home */
-.home .saeon-header + main {
+.saeonhome .saeon-header + main {
     padding-top: 0px;
 }
-.home .sn-noscroll #sn-cssmenu {
+.saeonhome .sn-noscroll #sn-cssmenu {
     top: -128px;
 }
 @media only screen and (min-width: 769px) {
@@ -78,7 +78,7 @@ a{
     #home-meu:hover .elementor-icon-box-title {
         color: #222222;
     }
-    .home .sn-noscroll,.home .sn-noscroll #cssmenu{
+    .saeonhome .sn-noscroll,.saeonhome .sn-noscroll #cssmenu{
         top: -128px;
     }
 }
