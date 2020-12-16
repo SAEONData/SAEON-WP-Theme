@@ -149,6 +149,13 @@ h3,body .elementor-widget-heading .elementor-heading-title{
 .page-template-page_news #main{
     padding-bottom:60px;
 }
+/* News header */
+.page-template-page_news #primary {
+    padding-top: 128px;
+}
+.sn-post-header {
+    padding: 180px 15px 60px;
+}
 
 /* Comments */
 #respond { 
